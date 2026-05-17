@@ -4,9 +4,6 @@ import whisper
 import os
 import uuid
 
-# FFmpeg path
-os.environ["PATH"] += os.pathsep + r"C:\Users\Ritesh Office\Downloads\ffmpeg-8.1.1-essentials_build\ffmpeg-8.1.1-essentials_build\bin"
-
 app = Flask(__name__)
 CORS(app)
 
@@ -14,7 +11,7 @@ print("Loading Whisper model...")
 
 # You can change:
 # tiny / base / small / medium
-model = whisper.load_model("base")
+model = whisper.load_model("tiny")
 
 print("Model loaded successfully!")
 
