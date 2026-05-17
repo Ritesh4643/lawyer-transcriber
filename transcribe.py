@@ -14,7 +14,7 @@ print("Loading Whisper model...")
 
 # You can change:
 # tiny / base / small / medium
-model = whisper.load_model("medium")
+model = whisper.load_model("tiny")
 
 print("Model loaded successfully!")
 
